@@ -16,7 +16,7 @@ public class NO36 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+		int[] arr = {  0, 6, 5, 4, 3, 2, 1 };
 		temp = new int[arr.length];
 		sort(arr, 0, arr.length - 1);
 		System.out.println(Arrays.toString(arr));
@@ -24,6 +24,7 @@ public class NO36 {
 	}
 
 	public static void sort(int[] array, int begin, int end) {
+		System.out.println(begin+"\t"+end);
 		if (begin >= end) {
 			return;
 		}
@@ -34,6 +35,7 @@ public class NO36 {
 	}
 
 	public static void merge(int[] array, int begin, int mid, int end) {
+		System.out.println("merge\t"+begin+"\t"+end);
 		for (int i = begin; i <= end; i++) {
 			temp[i] = array[i];
 		}
